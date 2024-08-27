@@ -1,3 +1,1 @@
-Hei, It's Tanvir Nibir studying in metropolia university of applied sciences in the department of IT.
-this github is created for my university assignment and project submission purpose 
-Thanks for visiting 
+Hey there, I'm Tanvir Nibir, a passionate student in the IT department at Metropolia University of Applied Sciences. This GitHub repository showcases the innovative projects and assignments I've developed. I'm excited to share my academic journey with you here. Thanks for visiting!
