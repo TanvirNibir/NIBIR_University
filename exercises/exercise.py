@@ -15,7 +15,18 @@
 # name = ["Tanvir", "Rahman", "Nibir"]
 # for name in name :
 #     print(name)
-fruits = ["apple", "pineapple", "Banana", "jackfruit"]
-for fruits in fruits:
-    print(fruits)
+# fruits = ["apple", "pineapple", "Banana", "jackfruit"]
+# for fruits in fruits:
+#     print(fruits)
 
+#list
+
+name = ["tanvir", "Rahman", "nibir", "payel", "omar", "niloy"]
+print(name[0])
+name[2] = "shifat"
+print(name[2])
+print(name)
+name.append("sakib")
+name.append("sumon")
+name.append("tahasin")
+print(name)
