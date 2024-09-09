@@ -6,7 +6,7 @@ while True:
         break
     numbers.append(int(user_input))
 numbers.sort(reverse=True)
-top_five_numbers = numbers[:5]
+five_numbers = numbers[:5]
 
-print("The five greatest numbers are:", top_five_numbers)
+print("The five greatest numbers are:", five_numbers)
 
