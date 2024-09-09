@@ -20,13 +20,19 @@
 #     print(fruits)
 
 #list
+#
+# name = ["tanvir", "Rahman", "nibir", "payel", "omar", "niloy"]
+# print(name[0])
+# name[2] = "shifat"
+# print(name[2])
+# print(name)
+# name.append("sakib")
+# name.append("sumon")
+# name.append("tahasin")
+# print(name)
+def nibir():
+    print("tanvir")
+    print("tanvir")
+    print("Tanvir " + "Rahman " + "Nibir")
 
-name = ["tanvir", "Rahman", "nibir", "payel", "omar", "niloy"]
-print(name[0])
-name[2] = "shifat"
-print(name[2])
-print(name)
-name.append("sakib")
-name.append("sumon")
-name.append("tahasin")
-print(name)
+nibir()
