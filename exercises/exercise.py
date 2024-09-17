@@ -12,9 +12,22 @@
 # kilograms = int(total_grams // 1000)
 # grams = total_grams % 1000
 # print(f"The weight in modern units: {kilograms} kilograms and {grams:.2f} grams.")
-size_zander = int(input("Enter the size of zender in cm : "))
-if size_zander >= 42 :
-    print("fish released successfully")
-else:
-    print("fish released unsuccessfully")
-    print(f"The fish is {size_zander:.2f} centimeters below the size limit")
+#size_zander = int(input("Enter the size of zender in cm : "))
+# if size_zander >= 42 :
+#     print("fish released successfully")
+# else:
+#     print("fish released unsuccessfully")
+#     print(f"The fish is {size_zander:.2f} centimeters below the size limit")
+
+# def greet():
+#     print("Hello!")
+#     return
+#
+# print("A new day starts with a greeting.")
+# greet()
+# print("Now we can move to other business.")
+# movies = []
+# movies.append((input("Enter a movie name 1 : ")))
+# movies.append((input("Enter a movie name 2 : ")))
+# movies.append((input("Enter a movie name 3 : ")))
+# print(movies)
