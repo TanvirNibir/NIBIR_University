@@ -1,12 +1,6 @@
-print("Welcome to leap year testing code")
-
+print("Welcome to the leap year testing code")
 year = int(input("Enter a year: "))
-
-if (year % 400 == 0):
-    print("It's a Leap Year")
-elif (year % 100 == 0):
-    print("It's not a Leap Year")
-elif (year % 4 == 0):
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
     print("It's a Leap Year")
 else:
     print("It's not a Leap Year")
