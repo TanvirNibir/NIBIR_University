@@ -10,7 +10,7 @@ while True:
 
     # Option 1: Enter a new airport
     if option == "1":
-        icao_code = input("Enter the ICAO code: ").upper()  # ICAO codes are usually uppercase
+        icao_code = input("Enter the ICAO code: ").upper()
         airport_name = input("Enter the airport name: ")
 
         if icao_code in airports:
@@ -19,7 +19,7 @@ while True:
             airports[icao_code] = airport_name
             print(f"Airport '{airport_name}' with ICAO code '{icao_code}' has been added.")
 
-    # Option 2: Fetch airport information
+
     elif option == "2":
         icao_code = input("Enter the ICAO code to fetch: ").upper()
 
