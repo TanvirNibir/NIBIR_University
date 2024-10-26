@@ -1,39 +1,42 @@
-import random
+from random import randint
 
 
 class Car:
-    def __init__(self, registration_number, max_speed):
+
+    def __init__(self, registration_number, max_speed, current_speed=0, distance_travelled=0):
         self.registration_number = registration_number
         self.max_speed = max_speed
-        self.current_speed = 0
-        self.traveled_distance = 0
+        self.current_speed = current_speed
+        self.distance_travelled = distance_travelled
 
-    def accelerate(self, speed_change):
-        self.current_speed = max(0, min(self.current_speed + speed_change, self.max_speed))
+    def accelerate(self, change_of_speed):
+        self.current_speed = self.current_speed + change_of_speed
+        if self.current_speed < 0:
+            self.current_speed = 0
+        elif self.current_speed > self.max_speed:
+            self.current_speed = self.max_speed
+        return
 
     def drive(self, hours):
-        self.traveled_distance += self.current_speed * hours
+        self.distance_travelled = self.distance_travelled + (hours * self.current_speed)
+        return
 
 
-cars = [Car(f"ABC-{i}", random.randint(100, 200)) for i in range(1, 11)]
+cars = []
 
-race_finished = False
-while not race_finished:
+for x in range(1, 11):
+    registration_number = "ABC-" + str(x)
+    max_speed = randint(100, 200)
+    cars.append(Car(registration_number, max_speed))
+
+race_over = False
+
+while not race_over:
     for car in cars:
-        car.accelerate(random.randint(-10, 15))
+        car.accelerate(randint(-10, 15))
         car.drive(1)
+        if car.distance_travelled >= 10000:
+            race_over = True
 
-    # After all cars have driven for 1 hour, check if any car has reached 10,000 km
-    race_finished = any(car.traveled_distance >= 10000 for car in cars)
-
-print(f"{'Registration':<15}{'Max Speed':<15}{'Current Speed':<15}{'Traveled Distance'}")
-print("=" * 60)
 for car in cars:
-    print(f"{car.registration_number:<15}{car.max_speed:<15}{car.current_speed:<15}{round(car.traveled_distance, 2)}")
-
-winners = [car for car in cars if car.traveled_distance >= 10000]
-if winners:
-    print("\nWinner(s):")
-    for winner in winners:
-        print(f"{winner.registration_number} with {round(winner.traveled_distance, 2)} km traveled!")
-#4
+    print(f"Registration number: {car.registration_number}, Maximum speed: {car.max_speed}, Current speed: {car.current_speed}, Distance travelled: {car.distance_travelled}.")
