@@ -12,12 +12,11 @@ class Car:
         print(f"Travelled Distance: {self.travelled_distance} km")
 
     def accelerate(self, change_speed):
-        # Adjusting the current speed by the change in speed
         self.current_speed += change_speed
-        # Ensuring the speed doesn't exceed the maximum speed
+
         if self.current_speed > self.max_speed:
             self.current_speed = self.max_speed
-        # Ensuring the speed doesn't go below 0
+
         elif self.current_speed < 0:
             self.current_speed = 0
 
@@ -40,3 +39,4 @@ car.print_properties()
 # Drive the car for another 2 hours, because the car has already travelled for 1.5 hrs (90 + 60 * 2)
 car.drive(2)
 car.print_properties()
+#3

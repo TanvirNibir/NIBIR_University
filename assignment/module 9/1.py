@@ -13,5 +13,6 @@ class Car:
         print(f"Travelled Distance: {self.travelled_distance} km")
 
 
+
 car = Car("ABC-123", 142)
 car.print_properties()

@@ -36,3 +36,4 @@ if winners:
     print("\nWinner(s):")
     for winner in winners:
         print(f"{winner.registration_number} with {round(winner.traveled_distance, 2)} km traveled!")
+#4
