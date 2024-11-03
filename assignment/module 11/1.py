@@ -28,3 +28,5 @@ publications.append(Book("Compartment No. 6", "Rosa Liksom", 192))
 
 for publication in publications:
     publication.print_information()
+
+    #

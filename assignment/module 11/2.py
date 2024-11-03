@@ -73,3 +73,4 @@ for car in cars:
     car.accelerate(randint(30, 60))
     car.drive(3)
     print(f"Car: {car.registration_number}\nDistance Travelled: {car.distance_travelled}\n")
+    #
