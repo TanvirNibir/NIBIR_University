@@ -20,3 +20,4 @@ else:
     # Convert temperature from Kelvin to Celsius
     celsius = int(temp_in_kelvin - 273.15)
     print(f"The city is: {city_name}, Temperature: {round(celsius, 1)}°C. The weather condition is: {description}.")
+#
